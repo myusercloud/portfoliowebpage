@@ -1,0 +1,183 @@
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.7;
+    margin: 0;
+    padding: 20px;
+    background-color: #121212; /* Dark gray background */
+    color: #E0E0E0; /* Light gray text */
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #1E1E1E; /* Slightly lighter dark shade for container */
+    padding: 40px; /* Increased padding */
+    border-radius: 15px; /* Adjusted border-radius */
+    box-shadow: 0 0 15px rgba(0,0,0,0.3); /* Subtle box-shadow for dark theme */
+}
+
+h1 {
+    color: #FFFFFF; /* Bright white for h1 */
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    color: #F5F5F5; /* Very light gray for h2 */
+    font-size: 2em;
+    margin-bottom: 0.6em;
+}
+
+h3 {
+    color: #F5F5F5; /* Very light gray for h3 */
+    font-size: 1.5em;
+    margin-bottom: 0.7em;
+}
+
+p {
+    color: #E0E0E0; /* Ensure paragraph text color is the default light gray */
+    margin-bottom: 1em;
+}
+
+/* General link styling */
+a {
+    color: #8ab4f8; /* Consistent link color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul { /* General UL reset, affects highlighted work list */
+    list-style-type: none;
+    padding-left: 0;
+    /* color: #E0E0E0; /* Color inherited from body or specific list type if needed */
+}
+
+li { /* General LI styling, affects highlighted work list items */
+    margin-bottom: 1em; /* Increased margin for better separation of project items */
+}
+
+img {
+    border: 2px solid #555; /* Light gray border for the image */
+    height: 150px;
+    width: 150px;
+    border-radius: 50%; /* Circular profile image */
+    object-fit: cover; /* Ensure image covers area without distortion */
+    display: block; /* Added to allow margin auto to center if needed, and consistent block behavior */
+    margin-left: auto; /* Centering the profile image */
+    margin-right: auto;
+    margin-bottom: 20px; /* Space below image */
+}
+
+.project-description {
+    font-size: 0.9em;
+    color: #B0B0B0; /* Slightly dimmer than main text */
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: #333;
+    color: #E0E0E0; /* Explicitly set color for project link text */
+    text-decoration: none; /* Overrides general 'a' if it had underline */
+    border-radius: 5px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #444;
+    text-decoration: none; /* Ensure no underline on hover for this specific class if not desired */
+}
+
+.contact-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.contact-list li {
+    margin-bottom: 8px;
+    font-size: 1em;
+}
+
+.contact-list a {
+    color: #8ab4f8; /* Uses general 'a' style, but can be more specific if needed */
+    /* text-decoration: none; Already handled by general 'a' */
+}
+
+/* .contact-list a:hover { */
+    /* text-decoration: underline; Already handled by general 'a:hover' */
+/* } */
+
+/* --- Responsive Design --- */
+
+/* Tablets and smaller devices */
+@media (max-width: 768px) {
+    body {
+        padding: 15px; /* Reduce body padding */
+    }
+
+    .container {
+        padding: 20px; /* Reduce container padding */
+        margin: 10px auto; /* Add some margin for smaller screens and keep centered */
+    }
+
+    h1 {
+        font-size: 2em; /* Adjust heading font sizes */
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    p, .project-description, .contact-list li {
+        font-size: 0.95em; /* Slightly adjust base text size */
+    }
+
+    .project-link {
+        padding: 8px 12px; /* Make buttons a bit larger for touch */
+        font-size: 1em;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    .container {
+        padding: 15px;
+        border-radius: 10px; /* Optional: slightly smaller border radius */
+        margin: 0 auto; /* Centered for mobile */
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    p, .project-description, .contact-list li {
+        font-size: 0.9em; /* Further adjust text size */
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
+}
